@@ -53,7 +53,7 @@ public class ArrayDemo {
 		 for(int i =0;i<score.length;i++)
 			
 			 System.out.print(""+score[i]+" ");
-		 */
+		
 		String word[]={"a","c","u","b","e","p","f","z"};
 		 System.out.print("原字符序列：");
 		for(int i=0;i<word.length;i++)
@@ -80,6 +80,36 @@ public class ArrayDemo {
 		
 		for(int i=0;i<word.length;i++)
 			System.out.print(" "+word[i]);
+		
+		
+         int score[]=new int[6];
+     	Scanner nu =new Scanner(System.in);
+    	System.out.print("初始数组 ");
+     	for(int i=0;i<5;i++)
+     		score[i]=nu.nextInt();
+     		
+  
+		System.out.print("新加入的成绩 ");
+		Scanner ne =new Scanner(System.in);
+		int newScore=ne.nextInt();
+		
+		System.out.print("新加入成绩的下标 ");
+		Scanner newnu =new Scanner(System.in);
+		int newnum=newnu.nextInt();
+		
+		for(int j =5;j>newnum;j--)
+			score[j]=score[j-1];
+		
+		score[newnum]=newScore;
+		Arrays.sort(score);
+		
+		System.out.print("插入后的成绩信息降序： ");
+		for(int i =5;i>=0;i--)			
+			System.out.print(" "+score[i]);
+		
+		*/
+		
+	
 		
 		
 		

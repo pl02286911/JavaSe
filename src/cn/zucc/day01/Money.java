@@ -42,8 +42,7 @@ public class Money {
          
          System.out.println("找零 :"+returnMoney);
          
-         */
-		
+         
          
 		  System.out.println("学号各位上数字之和等于20的本期幸运学生 ");
 		  
@@ -60,15 +59,9 @@ public class Money {
           
           System.out.println("你是幸运学生  ："+(lucky==sum))	;
           
-          
-          
-          
-          
-          
-         
-        
-         
-     
+          */
+		
+
          
         	 
          
