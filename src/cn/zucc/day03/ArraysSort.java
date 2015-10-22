@@ -11,7 +11,7 @@ public class ArraysSort {
 		
 		
 	}
-	public String[] intArrays(String[] in){
+	public int[] intArrays(int[] in){
 		Arrays.sort(in);
 		return in;
 	}

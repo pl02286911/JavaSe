@@ -79,7 +79,7 @@ public class Test {
           String [] newLine=array.stringArrays(line);
           for(int i=0;i<line.length;i++)
                System.out.print(newLine[i]+"\t"); 
-            */
+           
       StuManager sm =new StuManager();
        String flag="n";
        do{
@@ -106,9 +106,23 @@ public class Test {
       
        	 sm.findStu(start, end, findName);
        
-      
-      
-      
+       */
+    
+       Tip tip=new Tip();
+       User user=new User();
+       
+       System.out.println("帖子信息");
+       tip.setTitle("我是新手，请大家多指教");
+       tip.setContent("我刚开始学java");
+       tip.setPublishTime("2007-1-1 10:30:16");
+       tip.setUid(0);
+       tip.getInfo();
+    
+        
+        user.setuName("b");
+        user.setuPass("ab");
+        user.setuSex("公");
+        user.getUserInfo();
+  
 	}
-
 }
