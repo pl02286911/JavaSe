@@ -1,6 +1,6 @@
 package cn.zucc.day04;
 
-public class Tip extends Topic {
+public class Tip {
 	private String title;
 	private String content;
 	private String publishTime;
@@ -60,7 +60,7 @@ public class Tip extends Topic {
 
 
 	public void getInfo(){
-		System.out.println("帖子信息");
+		System.out.println("\n====帖子信息====");
 		System.out.println("帖子标题:"+title);
 		System.out.println("帖子内容:"+content);
 		System.out.println("发表时间:"+publishTime);

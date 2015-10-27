@@ -197,30 +197,38 @@ public class Test {
   		System.out.print("您需要付款");
   		goods.change(num, number);
   		
-  		
-		Tip tip =new Tip();
-		tip.setTitle("我会用继承了");
-		tip.setContent("如题");
-		tip.setPublishTime("2010-10-1 12:01:10");
-		tip.getInfo();
+  		Topic topic =new Topic();	
+		topic.setTitle("我会用继承了");
+		topic.setContent("如题");
+		topic.setPublishTime("2010-10-1 12:01:10");
+		topic.getInfo();
 		
 		Reply reply =new Reply() ;
-		reply.setTitle("re:我会用继承了");
+		reply.setTitle("Re:我会用继承了");
 		reply.setContent("我也会");
 		reply.setPublishTime("2010-10-1 12:03:10");
 		reply.getInfo();
-		 */
+		
+		topic.superTopic("我会用继承了2", "如题","2010-10-1 12:01:10");
+		 
 		
 		UserDaoImpl usd=new UserDaoImpl();
-	
 		usd.setUserName("spiderman");
 		usd.setUserPassword("spiderman");	
 		usd.setGender("男");
+		usd.getUserInfo();
 		
+		UserDao usd=new UserDaoImpl();
+		User user =new User();
 		
+		  usd.addUser(user);
+		  usd.findUser(user);
+		  usd.updateUser(user);
 		  usd.getUserInfo();
-		
-		
+		*/
+	
+		   
+		       
 		
 	}
 

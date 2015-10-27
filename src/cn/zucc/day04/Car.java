@@ -1,7 +1,7 @@
 package cn.zucc.day04;
 
 public class Car {
-	 private int site = 4;
+	private int site = 4;
 
 	public int getSite() {
 		return site;
@@ -16,3 +16,4 @@ public class Car {
 	        System.out.print("载客量是"+site+"人");
 	}
 }
+ 
